@@ -22,16 +22,13 @@ namespace CS_Tournaments.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Tournament>>> GetTournament()
        => await _tournamentDBContext.Tournaments.ToListAsync();
+        
 
-
-        //[HttpGet]
-        //public async Task<ActionResult<IEnumerable<Tournament>>> GetTournaments()
-        //=> await _tournamentDBContext.Tournaments.Include(t => t.SubTournaments).ToListAsync();
-
-
-        [HttpPost]
+        [HttpPost]       
         public async Task<IActionResult> CreateTournament(Tournament tournament)
         {
+            if (tournament == null) return BadRequest("Tournament is null.");
+
             _tournamentDBContext.Tournaments.Add(tournament);
             await _tournamentDBContext.SaveChangesAsync();
             return CreatedAtAction(nameof(GetTournament), new { id = tournament.Id }, tournament);
@@ -44,21 +41,15 @@ namespace CS_Tournaments.Controllers
         {
             var tournament = await _tournamentDBContext.Tournaments
           .Include(t => t.SubTournaments)
+          .Include(t => t.Players)
           .FirstOrDefaultAsync(t => t.Id == id);
 
             if (tournament == null) return NotFound();
 
-            return Ok(MapTournamentToDto(tournament));
-            //var tournament = await _tournamentDBContext.Tournaments
-            //    .Include(t => t.SubTournaments)
-            //    .ThenInclude(st => st.SubTournaments.Take(5))
-            //    .Include(t => t.Players)
-            //    .FirstOrDefaultAsync(t => t.Id == id);
-            //int depth = 5;
-            //return tournament == null ? NotFound() : Ok(MapTournamentToDto(tournament,depth));
+            return Ok(MapTournamentToDto(tournament));            
         }
 
-        private TournamentDto MapTournamentToDto(Tournament tournament,int depth = 0 )
+        private TournamentDto MapTournamentToDto(Tournament tournament, int depth = 0)
         {
             if (depth >= 5) // avoid going deeper than 5 levels
                 return new TournamentDto { Id = tournament.Id, Name = tournament.Name };
@@ -71,68 +62,9 @@ namespace CS_Tournaments.Controllers
             };
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> CreateSubTournament(Tournament tournament)
-        //{
-        //    _tournamentDBContext.Tournaments.Add(tournament);
-        //    await _tournamentDBContext.SaveChangesAsync();
-        //    return CreatedAtAction(nameof(GetTournament), new { id = tournament.Id }, tournament);
-        //}
-
-        //[HttpPost]
-        //public async Task<ActionResult> CreateTournament(TournamentRequest tournamentRequest)
-        //{
-        //    //if (await GetDepth(tournament.ParentTournamentId) >= 5)
-        //    //    return BadRequest("Cannot nest beyond 5 levels");
-
-        //    _tournamentDBContext.Tournaments.Add(tournamentRequest);
-
-        //    return Ok(await _tournamentDBContext.SaveChangesAsync());
-        //   // return CreatedAtAction(nameof(GetTournament), new { id = tournament.Id }, tournament);
-        //}
-
-
-
-
-        //// Get the list of all tournaments
-        //[HttpGet]
-        //public async Task<ActionResult<IEnumerable<Tournament>>> GetAllTournaments()
-        //{
-        //    return await _tournamentDBContext.Tournaments.Include(t => t.SubTournaments).ToListAsync();
-        //}
-
-
-        //private async Task<int> GetDepth(int? tournamentId)
-        //{
-        //    int depth = 0;
-        //    while (tournamentId != null)
-        //    {
-        //        var tournament = await _tournamentDBContext.Tournaments.FindAsync(tournamentId);
-        //        if (tournament == null) break;
-        //        depth++;
-        //        tournamentId = tournament.ParentTournamentId;
-        //    }
-        //    return depth;
-        //}
-
-        //// Delete a tournament
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> DeleteTournament(int id)
-        //{
-        //    var tournament = await _tournamentDBContext.Tournaments.FindAsync(id);
-        //    if (tournament == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    _tournamentDBContext.Tournaments.Remove(tournament);
-        //    await _tournamentDBContext.SaveChangesAsync();
-        //    return NoContent();
-        //}
-
-        //// Register a player in a tournament with hierarchy validation
+        // Register a player in a tournament with hierarchy validation
         [HttpPost("{tournamentId}/register")]
-        public async Task<IActionResult> RegisterPlayer(int tournamentId, int playerId)
+        public async Task<IActionResult> RegisterPlayer(int tournamentId, [FromQuery] int playerId)
         {
             var tournament = await _tournamentDBContext.Tournaments.Include(t => t.Players)
                 .FirstOrDefaultAsync(t => t.Id == tournamentId);
@@ -159,6 +91,8 @@ namespace CS_Tournaments.Controllers
             await _tournamentDBContext.SaveChangesAsync();
             return Ok("Player registered successfully.");
         }
+
+
 
     }
 }

@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CS-Tournaments/CS-Tournaments/bin/Debug/net8.0
+/CS-Tournaments/CS-Tournaments/obj
