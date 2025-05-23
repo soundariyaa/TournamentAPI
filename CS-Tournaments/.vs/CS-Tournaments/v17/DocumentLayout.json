@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\models\\tournament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|solutionrelative:cs-tournaments\\models\\tournament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|solutionrelative:cs-tournaments\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\controllers\\tournamentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.csproj|solutionrelative:cs-tournaments\\controllers\\tournamentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\dbcontext\\tournamentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|solutionrelative:cs-tournaments\\dbcontext\\tournamentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\models\\tournamentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|solutionrelative:cs-tournaments\\models\\tournamentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\models\\subtournament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|solutionrelative:cs-tournaments\\models\\subtournament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|solutionrelative:cs-tournaments\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|solutionrelative:cs-tournaments\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\controllers\\playerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|solutionrelative:cs-tournaments\\controllers\\playerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\models\\tournamentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|solutionrelative:cs-tournaments\\models\\tournamentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\services\\tournamentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|solutionrelative:cs-tournaments\\services\\tournamentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|solutionrelative:cs-tournaments\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\services\\itournamentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|solutionrelative:cs-tournaments\\services\\itournamentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|c:\\users\\sound\\source\\repos\\cs-tournaments\\cs-tournaments\\cs-tournaments.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0005EFA1-2FC0-4A55-B3B9-A98D601E850B}|CS-Tournaments\\CS-Tournaments.Api.csproj|solutionrelative:cs-tournaments\\cs-tournaments.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TournamentDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\DBContext\\TournamentDBContext.cs",
+              "RelativeDocumentMoniker": "CS-Tournaments\\DBContext\\TournamentDBContext.cs",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\DBContext\\TournamentDBContext.cs",
+              "RelativeToolTip": "CS-Tournaments\\DBContext\\TournamentDBContext.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwCwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T20:31:26.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlayersController.cs",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Controllers\\PlayersController.cs",
+              "RelativeDocumentMoniker": "CS-Tournaments\\Controllers\\PlayersController.cs",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Controllers\\PlayersController.cs",
+              "RelativeToolTip": "CS-Tournaments\\Controllers\\PlayersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T12:39:45.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Startup.cs",
+              "RelativeDocumentMoniker": "CS-Tournaments\\Startup.cs",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Startup.cs",
+              "RelativeToolTip": "CS-Tournaments\\Startup.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T09:36:29.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Program.cs",
+              "RelativeDocumentMoniker": "CS-Tournaments\\Program.cs",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Program.cs",
+              "RelativeToolTip": "CS-Tournaments\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T21:15:19.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TournamentServices.cs",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Services\\TournamentServices.cs",
+              "RelativeDocumentMoniker": "CS-Tournaments\\Services\\TournamentServices.cs",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Services\\TournamentServices.cs",
+              "RelativeToolTip": "CS-Tournaments\\Services\\TournamentServices.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T09:46:33.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\appsettings.json",
+              "RelativeDocumentMoniker": "CS-Tournaments\\appsettings.json",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\appsettings.json",
+              "RelativeToolTip": "CS-Tournaments\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-23T09:28:39.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TournamentsController.cs",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Controllers\\TournamentsController.cs",
+              "RelativeDocumentMoniker": "CS-Tournaments\\Controllers\\TournamentsController.cs",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Controllers\\TournamentsController.cs",
+              "RelativeToolTip": "CS-Tournaments\\Controllers\\TournamentsController.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAYwJgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T20:06:56.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Tournament.cs",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Models\\Tournament.cs",
+              "RelativeDocumentMoniker": "CS-Tournaments\\Models\\Tournament.cs",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Models\\Tournament.cs",
+              "RelativeToolTip": "CS-Tournaments\\Models\\Tournament.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswBIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T20:16:25.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "CS-Tournaments\\Models\\Player.cs",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Models\\Player.cs",
+              "RelativeToolTip": "CS-Tournaments\\Models\\Player.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBAAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T20:25:10.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SubTournament.cs",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Models\\SubTournament.cs",
+              "RelativeDocumentMoniker": "CS-Tournaments\\Models\\SubTournament.cs",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Models\\SubTournament.cs",
+              "RelativeToolTip": "CS-Tournaments\\Models\\SubTournament.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T17:12:15.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TournamentDto.cs",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Models\\TournamentDto.cs",
+              "RelativeDocumentMoniker": "CS-Tournaments\\Models\\TournamentDto.cs",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Models\\TournamentDto.cs",
+              "RelativeToolTip": "CS-Tournaments\\Models\\TournamentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T18:26:42.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TournamentRequest.cs",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Models\\TournamentRequest.cs",
+              "RelativeDocumentMoniker": "CS-Tournaments\\Models\\TournamentRequest.cs",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Models\\TournamentRequest.cs",
+              "RelativeToolTip": "CS-Tournaments\\Models\\TournamentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T10:24:09.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ITournamentService.cs",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Services\\ITournamentService.cs",
+              "RelativeDocumentMoniker": "CS-Tournaments\\Services\\ITournamentService.cs",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\Services\\ITournamentService.cs",
+              "RelativeToolTip": "CS-Tournaments\\Services\\ITournamentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T09:47:33.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CS-Tournaments.Api",
+              "DocumentMoniker": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\CS-Tournaments.Api.csproj",
+              "RelativeDocumentMoniker": "CS-Tournaments\\CS-Tournaments.Api.csproj",
+              "ToolTip": "C:\\Users\\sound\\source\\repos\\CS-Tournaments\\CS-Tournaments\\CS-Tournaments.Api.csproj",
+              "RelativeToolTip": "CS-Tournaments\\CS-Tournaments.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-22T21:35:23.724Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
