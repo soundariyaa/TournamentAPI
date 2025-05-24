@@ -18,45 +18,73 @@ namespace CS_Tournaments.Controllers
         [HttpGet]
         public async Task<ActionResult> GetPlayers()
         {
-            var players = await _tournamentDBContext.Players.ToListAsync();
-            if (players == null || !players.Any())
+            try
             {
-                return NotFound("No Players Found");
+                var players = await _tournamentDBContext.Players.ToListAsync();
+                if (players == null || !players.Any())
+                {
+                    return NotFound("No Players Found");
+                }
+                List<PlayerResponse> response = new List<PlayerResponse>();
+                response = players.Select(p => new PlayerResponse
+                {
+                    Id = p.Id,
+                    PlayerName = p.PlayerName,
+                    Age = p.Age
+                }).ToList();
+                return Ok(response);
             }
-            List<PlayerResponse> response = new List<PlayerResponse>();
-            response = players.Select(p => new PlayerResponse
+            catch (Exception ex)
             {
-                Id = p.Id,
-                PlayerName = p.PlayerName,
-                Age = p.Age
-            }).ToList();               
-            return Ok(response);
+                return StatusCode(500, $"Error retrieving Players: {ex.Message}");
+            }
         }
 
             [HttpPost]
         public async Task<ActionResult> CreatePlayer(Player player)
         {
-            _tournamentDBContext.Players.Add(player);
-           await _tournamentDBContext.SaveChangesAsync();
-           
-            return CreatedAtAction(nameof(GetPlayer), new { id = player.Id }, player);
+            try
+            {
+                _tournamentDBContext.Players.Add(player);
+                await _tournamentDBContext.SaveChangesAsync();
+
+                return CreatedAtAction(nameof(GetPlayer), new { id = player.Id }, player);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error creating Player: {ex.Message}");
+            }
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Player>> GetPlayer(int id)
         {
-            var player = await _tournamentDBContext.Players.FirstOrDefaultAsync(p => p.Id == id);
-            return player == null ? NotFound() : Ok(player);
+            try
+            {
+                var player = await _tournamentDBContext.Players.FirstOrDefaultAsync(p => p.Id == id);
+                return player == null ? NotFound() : Ok(player);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error retrieving Players for {id}: {ex.Message}");
+            }
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePlayer(int id)
         {
-            var player = await _tournamentDBContext.Players.FindAsync(id);
-            if (player == null) return NotFound();
-            _tournamentDBContext.Players.Remove(player);
-            await _tournamentDBContext.SaveChangesAsync();
-            return NoContent();
+            try
+            {
+                var player = await _tournamentDBContext.Players.FindAsync(id);
+                if (player == null) return NotFound();
+                _tournamentDBContext.Players.Remove(player);
+                await _tournamentDBContext.SaveChangesAsync();
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error deleting Players with id {id}: {ex.Message}");
+            }
         }
     }
 }

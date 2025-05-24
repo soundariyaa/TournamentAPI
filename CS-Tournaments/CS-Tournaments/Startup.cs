@@ -1,4 +1,5 @@
-﻿using CS_Tournaments.DBContext;
+﻿using CS_Tournaments.Api.Mapper;
+using CS_Tournaments.DBContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -24,7 +25,7 @@ namespace CS_Tournaments.Api
                 op.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
                 op.JsonSerializerOptions.WriteIndented = true;
             });
-            
+            services.AddAutoMapper(typeof(MappingProfile));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CSTournament.Api", Version = "v1" });
