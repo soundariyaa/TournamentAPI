@@ -21,7 +21,7 @@ namespace CS_Tournaments.Api
            
             services.AddControllers().AddJsonOptions(op =>
             {
-                op.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+                op.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
                 op.JsonSerializerOptions.WriteIndented = true;
             });
             

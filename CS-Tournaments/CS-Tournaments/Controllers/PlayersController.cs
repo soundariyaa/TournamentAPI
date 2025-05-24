@@ -16,10 +16,24 @@ namespace CS_Tournaments.Controllers
         public PlayersController(TournamentDBContext context) => _tournamentDBContext = context;
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Player>>> GetPlayers() =>
-            await _tournamentDBContext.Players.ToListAsync();
+        public async Task<ActionResult> GetPlayers()
+        {
+            var players = await _tournamentDBContext.Players.ToListAsync();
+            if (players == null || !players.Any())
+            {
+                return NotFound("No Players Found");
+            }
+            List<PlayerResponse> response = new List<PlayerResponse>();
+            response = players.Select(p => new PlayerResponse
+            {
+                Id = p.Id,
+                PlayerName = p.PlayerName,
+                Age = p.Age
+            }).ToList();               
+            return Ok(response);
+        }
 
-        [HttpPost]
+            [HttpPost]
         public async Task<ActionResult> CreatePlayer(Player player)
         {
             _tournamentDBContext.Players.Add(player);

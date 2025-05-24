@@ -28,7 +28,7 @@ namespace CS_Tournaments.Controllers
         public async Task<IActionResult> CreateTournament(Tournament tournament)
         {
             if (tournament == null) return BadRequest("Tournament is null.");
-
+            // IF 
             _tournamentDBContext.Tournaments.Add(tournament);
             await _tournamentDBContext.SaveChangesAsync();
             return CreatedAtAction(nameof(GetTournament), new { id = tournament.Id }, tournament);
