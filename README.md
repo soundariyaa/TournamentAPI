@@ -15,7 +15,8 @@ This project is developed using below tools and software libraries
 2. Asp.Net Core
 3. C#
 4. (.Net) 8.0
-5. Postman
+5. Microsoft SQL Server Management Studio
+6. Postman
 
  ## Table Creation
 ### Database Name : TournamentDB
@@ -56,10 +57,19 @@ This project is developed using below tools and software libraries
     CONSTRAINT FK_SubTournament FOREIGN KEY (ParentTournamentId) REFERENCES Tournament(Id),
     CONSTRAINT FK_Sub FOREIGN KEY (SubTournamentId) REFERENCES Tournament(Id)
   );
-```
-  ## Improvements needed:
-1. Unit test(Xunit) has be added to test fake data
-2. The same project can be implemented in the clean architecture
-3. Service has to created to do the SQL query operations instead of doing in the controllers
+
+
+### **Improvements needed:**
+ 1. Unit test(Xunit) has be added to test fake data
+ 2. The same project can be implemented in the clean architecture
+ 3. Service has to created to do the SQL query operations instead of doing in the controllers
+
+###  API Test
+ - Added Postman API test collection file in the ApiTest folder.
+ - Run the test collection in postman tool , or install Newman in Visual studio using this command "npm install -g newman" and run this command "newman run ./ApiTest/TournamentAPI.postman_collection.json".
+
+ - SQL dump also there in the TournamentDBdump folder. Inport this dump in your database and run.
+
+
   
    
