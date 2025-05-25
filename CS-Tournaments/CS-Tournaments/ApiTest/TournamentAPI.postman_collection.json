@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "084c2d7b-ab4c-4f0b-bf3b-e159cbe60c39",
+		"name": "TournamentAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8329553"
+	},
+	"item": [
+		{
+			"name": "GetPlayers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7184/api/players",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7184",
+					"path": [
+						"api",
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPlayerById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7184/api/players/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7184",
+					"path": [
+						"api",
+						"players",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTournament",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Euro Championship 2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7184/api/tournaments",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7184",
+					"path": [
+						"api",
+						"tournaments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateSubTournaments",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Euro Championship 2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7184/api/tournaments",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7184",
+					"path": [
+						"api",
+						"tournaments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateSubSubTournaments",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Euro Championship 2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7184/api/tournaments",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7184",
+					"path": [
+						"api",
+						"tournaments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterPlayerForSubSubTournament",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7184/api/tournaments/21/register?tournamentId=21&playerId=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7184",
+					"path": [
+						"api",
+						"tournaments",
+						"21",
+						"register"
+					],
+					"query": [
+						{
+							"key": "tournamentId",
+							"value": "21"
+						},
+						{
+							"key": "playerId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterPlayerForParentTournament",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7184/api/tournaments/21/register?tournamentId=21&playerId=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7184",
+					"path": [
+						"api",
+						"tournaments",
+						"21",
+						"register"
+					],
+					"query": [
+						{
+							"key": "tournamentId",
+							"value": "21"
+						},
+						{
+							"key": "playerId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTournaments",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7184/api/tournaments",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7184",
+					"path": [
+						"api",
+						"tournaments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTournamentById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7184/api/tournaments/10",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7184",
+					"path": [
+						"api",
+						"tournaments",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSubTournaments",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7184/api/tournaments/10/subtournaments",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7184",
+					"path": [
+						"api",
+						"tournaments",
+						"10",
+						"subtournaments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTournamentPlayers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7184/api/tournaments/13/players",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7184",
+					"path": [
+						"api",
+						"tournaments",
+						"13",
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddPlayer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"playerName\": \"Ulf\",\r\n  \"age\": 24\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7184/api/players",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7184",
+					"path": [
+						"api",
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePlayer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7184/api/players/11",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7184",
+					"path": [
+						"api",
+						"players",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

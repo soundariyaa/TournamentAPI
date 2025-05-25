@@ -1,0 +1,7 @@
+PlayersId,TournamentsId
+1,1
+1,10
+1,11
+1,19
+2,13
+3,13

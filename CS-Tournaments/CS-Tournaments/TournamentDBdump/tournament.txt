@@ -1,0 +1,17 @@
+Id,Name,ParentTournamentId
+1,Global Championship,1
+2,CS Global Championship 2025,2
+6,Global Championship Group A,1
+7,Group A,2
+8,Group B,2
+10,EuroVision 2025,
+11,EuroVision-Group-A,10
+12,EuroVision-Sub-Group-A,11
+13,World Criket 2025,
+14,World Criket 2025 Group A,13
+15,World Criket 2025 Group B,14
+16,World Criket 2025 Group C,15
+17,World Criket 2025 Group D,13
+19,Euro Championship 2025,
+20,Euro Championship 2025 - Group A,19
+21,Euro Championship 2025 - Group A - test1,20
